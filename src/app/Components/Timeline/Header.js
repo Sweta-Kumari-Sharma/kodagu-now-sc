@@ -8,6 +8,10 @@ import gantt from "../../Images/Icon (4).png";
 import timeline from "../../Images/Icon (3).png";
 import activity from "../../Images/Icon (2).png";
 import search from "../../Images/search.png";
+import Left from "../../Images/Button10.png";
+import Right from "../../Images/Button11.png";
+import search2 from "../../Images/Button12.png";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 // import Carousel from "react-multi-carousel";
@@ -30,8 +34,8 @@ const responsive = {
 const Header = () => {
   return (
     <div>
-      <div className=" flex  items-center justify-between px-6 md:px-0 ">
-        <div className="w-[70%] md:w-[100%]  flex space-x-12 px-4 items-center max-w-[70vw] md:max-w-[100%] overflow-auto justify-center border-b ">
+      <div className="hidden md:flex  items-center justify-between px-6 md:px-0 ">
+        <div className="w-[70%] md:w-[100%]  flex space-x-12 px-4 items-center max-w-[70vw] md:max-w-[100%] overflow-auto justify-between border-b ">
           <div className="flex items-center justify-center w-[120px]  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
             <Image src={playlist} className="h-[30px] w-[30px]" />
             <div className="text-[#ADB8CC] text-[roboto] text-[12px]">
@@ -86,40 +90,40 @@ const Header = () => {
             />
           </div>
       </div>
-      {/* <div className="md:hidden w-[70vw] flex items-center justify-center">
-        <div>
-        <Carousel >
-           <div className="flex items-center justify-center w-[80px]  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
+      <div className="md:hidden space-x-2 w-[100vw] flex items-center justify-between px-4">
+        <div className=" ">
+        <Carousel className="flex items-center justify-center w-[300px]">
+           <div className="flex items-center mb-4 justify-center w-[80px] mx-auto py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
             <Image src={playlist} className="h-[30px] w-[30px]" />
-            <div className="text-[#ADB8CC] text-[roboto] text-[12px]">
+            <div className="text-[#ADB8CC] text-[roboto] text-[12px] w-[100px]">
               List Tasks
             </div>
           </div>
-          <div className="flex items-center justify-center  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
+          <div className="flex items-center mb-4 justify-center w-[80px] mx-auto  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
             <Image src={boards} className="h-[30px] w-[30px]" />
             <div className="text-[#ADB8CC] text-[roboto] text-[12px]">
               Boards
             </div>
           </div>
-          <div className="flex items-center justify-center  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
+          <div className="flex items-center mb-4 justify-center w-[80px] mx-auto  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
             <Image src={calender} className="h-[30px] w-[30px]" />
             <div className="text-[#ADB8CC] text-[roboto] text-[12px]">
               Calender
             </div>
           </div>
-          <div className="flex items-center justify-center  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
-            <Image src={gantt} className="h-[15px] w-[15px]" />
+          <div className="flex items-center mb-4 justify-center w-[80px] mx-auto  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
+            <Image src={gantt} className="h-[15px] w-[10px]" />
             <div className="text-[#ADB8CC] text-[roboto] text-[12px]">
               Gantt
             </div>
           </div>
-          <div className="flex items-center justify-center  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
+          <div className="flex items-center mb-4 justify-center w-[80px] mx-auto  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
             <Image src={timeline} className="h-[30px] w-[30px]" />
             <div className="text-[#ADB8CC] text-[roboto] text-[12px]">
               Timeline
             </div>
           </div>
-          <div className="flex items-center justify-center  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
+          <div className="flex items-center mb-4 justify-center w-[80px] mx-auto  py-4 space-x-2 hover:border-b-4 hover:border-b-[#3361FF] ">
             <Image src={activity} className="h-[30px] w-[30px]" />
             <div className="text-[#ADB8CC] text-[roboto] text-[12px]">
               Activity
@@ -127,13 +131,13 @@ const Header = () => {
           </div>
         </Carousel>
         </div>
-        <div>
-            <Image
-            src={search}
-            className=" h-[24px] w-[24px] bg-white rounded-[50%] "
-            />
+        <div className="search ">
+        <Image
+            src={search2}
+            className="seacrch mr-[20px] "
+        />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
