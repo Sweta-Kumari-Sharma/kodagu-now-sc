@@ -10,17 +10,23 @@ import clipboard from '../../Images/Icon18.png'
 import clock from '../../Images/Icon13.png'
 import avatar11 from '../../Images/Avatar Image (5).png'
 import avatar15 from '../../Images/Avatar Image (15).png'
+import avatar14 from '../../Images/Avatar Image (14).png'
+import base from '../../Images/Base.png'
+import avatar7 from '../../Images/Avatar Image (7).png'
 import avatar9 from '../../Images/Avatar Image (9).png'
 import avatar4 from '../../Images/Avatar Image (4).png'
+import avatar13 from '../../Images/Avatar Image (13).png'
 
 const ColFirst = () => {
   return (
-    <div>
-        <div className='bg-white text-[12px] text-[roboto] text-[#4D5E80] flex items-center justify-center space-x-4 border-l-4 border-[#8833FF] px-4 py-2'>
-            <div>TO DO</div>
-            <div className='bg-white border border-[#4D5E80] text-[11px] rounded-[50%] h-[20px] w-[20px] flex items-center justify-center'>5</div>
-            <Image src={hori}/>
-            <Image src={NewTab} className="h-[14px] w-[14px]"></Image>
+    <div className=''>
+        <div className=' py-2 bg-white'>
+            <div className='bg-white text-[12px] px-4 text-[roboto] text-[#4D5E80] flex items-center justify-center space-x-4 border-l-4 border-[#8833FF] '>
+                <div>TO DO</div>
+                <div className='bg-white border border-[#4D5E80] text-[11px] rounded-[50%] h-[20px] w-[20px] flex items-center justify-center'>5</div>
+                <Image src={hori}/>
+                <Image src={NewTab} className="h-[14px] w-[14px]"></Image>
+            </div>
         </div>
 
         <div className='bg-white my-4 hover:border-2 hover:border-[#FF6633] rounded-lg'>
@@ -48,35 +54,42 @@ const ColFirst = () => {
         <div className='bg-white my-4 py-4 hover:border-2 hover:border-[#FF6633] rounded-lg'>
             <div className='flex items-center justify-between px-2   space-x-2'>
                 <div className='text-[#ADB8CC] text-[roboto] text-[11px]'>Space Tasks 2</div>
-                <Image src={avatar16} className=''/>
+                <div className='flex'>
+                    <Image src={avatar7} className=''/>
+                    <Image src={avatar15} className='ml-[-5px]'/>
+                </div>
             </div>
             <div className='text-[#4D5E80] px-2 font-bold text-[roboto] text-[12px]'>Make Money Online Through</div>
         </div>
         <div className='bg-white my-4 py-4 hover:border-2 hover:border-[#FF6633] rounded-lg'>
             <div className='flex items-center justify-between px-2   space-x-2'>
                 <div className='text-[#ADB8CC] text-[roboto] text-[11px]'>Space Tasks 2</div>
-                <Image src={avatar16} className=''/>
+                <div className='flex'>
+                    <Image src={base} className=''/>
+                    <Image src={avatar9} className='ml-[-5px]'/>
+                    <Image src={avatar14} className='ml-[-5px]'/>
+                </div>
             </div>
             <div className='text-[#4D5E80] px-2 font-bold text-[roboto] text-[12px]'>Search Engine Optimization...</div>
         </div>
         <div className='bg-white my-4 py-4 hover:border-2  hover:border-[#FF6633] rounded-lg'>
             <div className='flex items-center justify-between px-2   space-x-2  '>
                 <div className='text-[#ADB8CC] text-[roboto] text-[11px]'>Space Tasks 2</div>
-                <Image src={avatar16} className=''/>
+                <Image src={avatar13} className=''/>
             </div>
             <div className='text-[#4D5E80] px-2 font-bold text-[roboto] text-[12px]'>Characteristics Of A Successful</div>
         </div>
         <div className='bg-white my-4 py-4 hover:border-2 hover:border-[#FF6633] rounded-lg'>
             <div className='flex items-center justify-between px-2   space-x-2 '>
                 <div className='text-[#ADB8CC] text-[roboto] text-[11px]'>Space Tasks 2</div>
-                <Image src={avatar16} className=''/>
+                <Image src={avatar4} className=''/>
             </div>
             <div className='text-[#4D5E80] px-2 font-bold text-[roboto] text-[12px]'>Getting Free Publicity</div>
         </div>
         <div className='bg-white my-4 py-4 hover:border-2 hover:border-[#FF6633] rounded-lg'>
             <div className='flex items-center justify-between px-2   space-x-2 '>
                 <div className='text-[#ADB8CC] text-[roboto] text-[11px]'>Space Tasks 2</div>
-                <Image src={avatar16} className=''/>
+                <Image src={avatar11} className=''/>
             </div>
             <div className='text-[#4D5E80] px-2 font-bold text-[roboto] text-[12px]'>Importance Of The Custom..</div>
         </div>

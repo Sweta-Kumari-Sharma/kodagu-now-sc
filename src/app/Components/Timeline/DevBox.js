@@ -8,12 +8,12 @@ import comment from '../../Images/Icon10.png'
 import avatar from '../../Images/Avatar Image (11).png'
 import close from '../../Images/Icon15.png'
 import right from '../../Images/ChevronRight.png'
-import button from '../../Images/Button5.png'
+import button from '../../Images/Button9.png'
 import Image from 'next/image'
 
 const DevBox = () => {
   return (
-    <div className='hidden md:block w-[350px] h-[340ppx] bg-white pt-6'>
+    <div className='  w-[350px] h-[340ppx] bg-white pt-6'>
         <div className='flex justify-between px-4 '>
             <div className=' text-[12px] text-[roboto] text-[#4D5E80] font-bold flex items-center  space-x-4 px-2 py-2'>
                 <Image src={dot}/>
@@ -49,13 +49,13 @@ const DevBox = () => {
                 <div className='text-[#7D8FB3] text-[roboto] text-[11px]'>START DATE</div>
                 <div className='text-[#4D5E80] px-2 font-bold text-[roboto] text-[12px]'>Sep 3, 9:00 pm</div>
             </div>
-            <Image src={right} className='w-[7px] h-[12px]'/>
+            <Image src={right} className='md:w-[10px] md:h-[15px]'/>
             <div className='flex flex-col items-center justify-between px-2   '>
                 <div className='text-[#7D8FB3] text-[roboto] text-[11px]'>DUE DATE</div>
                 <div className='text-[#4D5E80] px-2 font-bold text-[roboto] text-[12px]'>Sep 4, 9:00 pm</div>
             </div>
             <div className='flex items-center justify-center  py-4 space-x-1 hover:border-b-4 hover:border-b-[#3361FF] '>
-                <Image src={button} className='h-[25px] w-[25px]'/>
+                <Image src={button} className='md:h-[25px] md:w-[25px]'/>
                 <div className='text-[#ADB8CC] text-[roboto] text-[11px]'>1 Day Left</div>
             </div>
         </div>
